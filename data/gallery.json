@@ -1,4 +1,5 @@
-[
+  
+  module.exports = [
   {
     "id":1,
     "title":"Full Moon",
@@ -97,5 +98,5 @@
     "linkURL":"<a href=\"https://images.unsplash.com/photo-1613956644665-38b1b3d92475?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80\"> Click For Link </a>",
     "photoCredit":"Igacio Aguilar",
     "creditURL":"<a href=\"https://unsplash.com\"> CreditURL </a>"
-  }
-]
+  },
+];

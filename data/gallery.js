@@ -1,4 +1,4 @@
-/* let nature =[
+module.exports =[
   {
     id: 1,
     title: "Full Moon",
@@ -112,61 +112,5 @@
     photoCredit:'Igacio Aguilar' ,
     creditURL:'<a href="https://unsplash.com"> CreditURL </a>',
     
-
-
   }
-]; */
-/************************To get access of individual Images**************************************/
-
-  //document.querySelector('h2').innerHTML=nature.title ;
-/*document.querySelector('.id').innerHTML= nature[8].id;
-document.querySelector('.img').setAttribute('src', nature[8].pathURL);
-document.querySelector('figcaption').innerHTML = nature[8].photoCredit; 
-document.querySelector('.title').innerHTML=nature[8].title;
-document.querySelector('p').innerHTML=nature[8].description;
-document.querySelector('.linkURL').innerHTML=nature[8].linkURL;
-document.querySelector('.creditURL').innerHTML=nature[8].creditURL;*/
-
-/************************************** */
-"use strict";
-
-//fetch api
-fetch("/api/v0/gallery")
-  .then(function (response) {
-    if (!response.ok) {
-      throw new Error("This is an error");
-    }
-    return response.json();
-  })
-  .then(function (data) {
-    const pictures = data;
-    //code from a3
-    // select gallery, assign as const
-    const gallery = document.querySelector(".gallery");
-
-    //create output string for html
-    let output = "";
-
-let output='';
-let title='';
-
-nature.forEach(function(item){
-  // output += `<img src = "${item.pathURL}" alt="Pictures of Nature">`;
-  // title += `${item.title}`
-  output += `
-  <h2>${item.title}</h2>
-  <figure>
-    <img class ="img" src="${item.pathURL}" alt="${item.title}"  width="${item.width}" height="${item.height}">
-    <figcaption> ${item.creditURL} ${' '}  ${item.photoCredit}   ${item.linkURL}  </figcaption>
-    <p>${item.description} </p>
-  </figure> `
-;
-  
-document.querySelector('.img').innerHTML= output;
-
-});
-
-})
-.catch(function (error) {
-  console.log(error);
-});
+]; 
