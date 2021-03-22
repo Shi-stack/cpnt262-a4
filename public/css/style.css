@@ -1,0 +1,18 @@
+body{
+  text-align: center;
+  background-color: rosybrown;
+}
+
+h1 {
+  text-align: center;
+  color:rebeccapurple;
+  font-size: 3rem;
+}
+
+p{
+  
+  color:rebeccapurple;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+}
